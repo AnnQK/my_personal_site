@@ -1,6 +1,6 @@
-# My resume / CV for Front-end trainee.
+# My resume / CV for Front-end trainee job. (in progress)
 
 ## Tools:
 - HTML 
 - CSS, SASS, BEM 
-- worked wuth flexbox, :hovers and transitions
+- worked with flexbox, :hovers and transitions
