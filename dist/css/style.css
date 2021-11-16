@@ -51,7 +51,7 @@ main {
   width: 100%;
   min-width: 300px;
   padding: 3rem;
-  margin: 1rem;
+  margin: 1.5rem;
   border-radius: 1rem;
 }
 
@@ -141,6 +141,22 @@ footer {
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
+}
+
+.box {
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  -webkit-transition: -webkit-transform 300ms, -webkit-box-shadow 300ms;
+  transition: -webkit-transform 300ms, -webkit-box-shadow 300ms;
+  transition: transform 300ms, box-shadow 300ms;
+  transition: transform 300ms, box-shadow 300ms, -webkit-transform 300ms, -webkit-box-shadow 300ms;
+}
+
+.box:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0 15px 70px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 15px 70px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 700px) {

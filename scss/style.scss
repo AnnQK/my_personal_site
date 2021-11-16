@@ -3,6 +3,7 @@
 'resets';
 
 // Layout
+
 body {
     background-color: $backgroundColor;
     font-family: $mainFont;
@@ -38,7 +39,7 @@ main {
     width: 100%;
     min-width: 300px;
     padding: 3rem;
-    margin: 1rem;
+    margin: 1.5rem;
     border-radius: 1rem;
 
     &--info {
@@ -116,10 +117,22 @@ footer {
     }
 }
 
+// shadow style
+
+.box {
+    box-shadow: 0 5px 20px $shadows;
+    transition: transform 300ms, box-shadow 300ms;
+
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 15px 70px $shadows;
+    }
+}
 
 
 
 // responsive
+
 @media (min-width: $desktop) {
     .box--info {
         @include flexCenter(row);
