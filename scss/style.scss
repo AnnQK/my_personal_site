@@ -9,6 +9,7 @@ body {
     font-size: 1.125rem;
     font-weight: 300;
 }
+
 .box__image{
     margin: .8rem;
     
@@ -19,11 +20,11 @@ body {
     }
 }
 
-
 header {
     text-align: center;
     margin: 2rem;
 }
+
 main {
     margin: auto;
     width: 80%;
@@ -72,9 +73,22 @@ main {
         }
     }
 
+    &__about__text {
+        line-height: 1.7rem;
+        margin-bottom: .5rem;
+    }
+
 }
 
+.title {
+    text-align: center;
+    margin-bottom: .5rem;
+}
 
+footer {
+    text-align: center;
+    padding: .5rem;
+}
 // responsive
 @media (min-width: $desktop) {
     .box--info {

@@ -97,6 +97,21 @@ main {
   content: ':';
 }
 
+.box__about__text {
+  line-height: 1.7rem;
+  margin-bottom: .5rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+footer {
+  text-align: center;
+  padding: .5rem;
+}
+
 @media (min-width: 700px) {
   .box--info {
     display: -webkit-box;
