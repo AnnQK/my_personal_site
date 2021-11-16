@@ -89,6 +89,17 @@ footer {
     text-align: center;
     padding: .5rem;
 }
+
+// links
+
+.link {
+    text-decoration: none;
+    color: $linkColor;
+}
+
+
+
+
 // responsive
 @media (min-width: $desktop) {
     .box--info {

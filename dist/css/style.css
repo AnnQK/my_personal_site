@@ -112,6 +112,11 @@ footer {
   padding: .5rem;
 }
 
+.link {
+  text-decoration: none;
+  color: #1F4068;
+}
+
 @media (min-width: 700px) {
   .box--info {
     display: -webkit-box;
