@@ -95,6 +95,25 @@ footer {
 .link {
     text-decoration: none;
     color: $linkColor;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: $linkColor;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in;
+
+    }
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
 }
 
 
