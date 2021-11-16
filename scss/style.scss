@@ -1,3 +1,89 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import './variables',
-'./resets';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import 'variables',
+'resets';
+
+// Layout
+body {
+    background-color: $backgroundColor;
+    font-family: $mainFont;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+.box__image{
+    margin: .8rem;
+    
+    .box__image__photo {
+        width: 150px;
+        display: block;
+        border-radius: 2rem;
+    }
+}
+
+
+header {
+    text-align: center;
+    margin: 2rem;
+}
+main {
+    margin: auto;
+    width: 80%;
+    max-width: 850px;
+    @include flexCenter(column);
+    
+}
+
+.box {
+    background-color: $boxColor;
+    width: 100%;
+    min-width: 300px;
+    padding: 3rem;
+    margin: 1rem;
+    border-radius: 1rem;
+
+    &--info {
+        @include flexCenter(column);
+        
+    }
+
+    &__contacts__list {
+        list-style: none;
+        line-height: 1.7rem;
+    }
+
+    &__skills__list {
+        line-height: 1.7rem;
+        list-style: none;
+        text-align: center;
+    }
+
+    &__ed__list {
+        line-height: 1.7rem;
+
+        &__item {
+            margin-top: .6rem;
+        }
+        
+
+    }
+    .dates {
+        font-weight: 800;
+        &::after {
+            content: ':';
+        }
+    }
+
+}
+
+
+// responsive
+@media (min-width: $desktop) {
+    .box--info {
+        @include flexCenter(row);
+        justify-content: space-around;
+    }
+
+    .box__contacts__list {
+        line-height: 3rem;
+    }
+    
+}

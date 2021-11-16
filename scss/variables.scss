@@ -1,0 +1,18 @@
+// colors
+$backgroundColor: #FEF5ED;
+$hoverColor: #FEF5ED;
+$boxColor: #D3E4CD;
+
+// fonts
+$mainFont: 'Montserrat', sans-serif;
+
+// responsive
+$desktop: 700px;
+
+//mixins
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: $direction;
+}
