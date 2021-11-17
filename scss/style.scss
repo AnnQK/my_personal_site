@@ -47,25 +47,23 @@ main {
         
     }
 
-    &__contacts__list {
-        list-style: none;
-        line-height: 1.7rem;
-    }
-
     &__skills__list {
-        line-height: 1.7rem;
-        list-style: none;
         text-align: center;
     }
 
     &__ed__list {
-        line-height: 1.7rem;
+       list-style: disc;
+        
 
         &__item {
             margin-top: .6rem;
         }
         
 
+    }
+
+    &__about__list {
+        list-style: disc;
     }
     .dates {
         font-weight: 800;
@@ -79,6 +77,7 @@ main {
         margin-bottom: .5rem;
     }
 
+    
 }
 
 .title {

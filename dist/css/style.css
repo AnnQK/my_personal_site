@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+  line-height: 1.7rem;
+}
+
 body {
   background-color: #FEF5ED;
   font-family: "Montserrat", sans-serif;
@@ -70,23 +75,20 @@ main {
           flex-direction: column;
 }
 
-.box__contacts__list {
-  list-style: none;
-  line-height: 1.7rem;
-}
-
 .box__skills__list {
-  line-height: 1.7rem;
-  list-style: none;
   text-align: center;
 }
 
 .box__ed__list {
-  line-height: 1.7rem;
+  list-style: disc;
 }
 
 .box__ed__list__item {
   margin-top: .6rem;
+}
+
+.box__about__list {
+  list-style: disc;
 }
 
 .box .dates {
