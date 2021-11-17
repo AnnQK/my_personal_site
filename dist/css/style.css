@@ -91,6 +91,10 @@ main {
   list-style: disc;
 }
 
+.box__about__list__item {
+  margin-top: .6rem;
+}
+
 .box .dates {
   font-weight: 800;
 }

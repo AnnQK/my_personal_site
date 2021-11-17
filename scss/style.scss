@@ -64,6 +64,10 @@ main {
 
     &__about__list {
         list-style: disc;
+
+        &__item {
+            margin-top: .6rem;
+        }
     }
     .dates {
         font-weight: 800;
