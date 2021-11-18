@@ -1,149 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import 'variables',
-'resets';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import "variables", "resets";
 
 // Layout
 
 body {
-    background-color: $backgroundColor;
-    font-family: $mainFont;
-    font-size: 1.125rem;
-    font-weight: 300;
+  background-color: $backgroundColor;
+  font-family: $mainFont;
+  font-size: 1.125rem;
+  font-weight: 300;
 }
 
-.box__image{
-    margin: .8rem;
-    
-    .box__image__photo {
-        width: 150px;
-        display: block;
-        border-radius: 2rem;
-    }
+.box__image {
+  margin: 0.8rem;
+
+  .box__image__photo {
+    width: 150px;
+    display: block;
+    border-radius: 2rem;
+  }
 }
 
 header {
-    text-align: center;
-    margin: 2rem;
+  text-align: center;
+  margin: 2rem;
 }
 
 main {
-    margin: auto;
-    width: 80%;
-    max-width: 850px;
-    @include flexCenter(column);
-    
+  margin: auto;
+  width: 80%;
+  max-width: 850px;
+  @include flexCenter(column);
 }
 
 .box {
-    background-color: $boxColor;
-    width: 100%;
-    min-width: 300px;
-    padding: 3rem;
-    margin: 1.5rem;
-    border-radius: 1rem;
+  background-color: $boxColor;
+  width: 100%;
+  min-width: 300px;
+  padding: 3rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
 
-    &--info {
-        @include flexCenter(column);
-        
+  &--info {
+    @include flexCenter(column);
+  }
+
+  &__skills__list {
+    text-align: center;
+  }
+
+  &__ed__list {
+    list-style: disc;
+
+    &__item {
+      margin-top: 0.6rem;
     }
+  }
 
-    &__skills__list {
-        text-align: center;
+  &__about__list {
+    list-style: disc;
+
+    &__item {
+      margin-top: 0.6rem;
     }
-
-    &__ed__list {
-       list-style: disc;
-        
-
-        &__item {
-            margin-top: .6rem;
-        }
-        
-
+  }
+  .dates {
+    font-weight: 800;
+    &::after {
+      content: ":";
     }
+  }
 
-    &__about__list {
-        list-style: disc;
-
-        &__item {
-            margin-top: .6rem;
-        }
-    }
-    .dates {
-        font-weight: 800;
-        &::after {
-            content: ':';
-        }
-    }
-
-    &__about__text {
-        line-height: 1.7rem;
-        margin-bottom: .5rem;
-    }
-
-    
+  &__about__text {
+    line-height: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .title {
-    text-align: center;
-    margin-bottom: .5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 footer {
-    text-align: center;
-    padding: .5rem;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+  position: sticky;
+  bottom: 0.1rem;
+  background-color: $backgroundColor;
 }
 
 // links
 
 .link {
-    text-decoration: none;
-    color: $linkColor;
-    position: relative;
+  text-decoration: none;
+  color: $linkColor;
+  position: relative;
 
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        width: 100%;
-        height: 2px;
-        background-color: $linkColor;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 250ms ease-in;
-
-    }
-    &:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: $linkColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
 // shadow style
 
 .box {
-    box-shadow: 0 5px 20px $shadows;
-    transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 0 5px 20px $shadows;
+  transition: transform 300ms, box-shadow 300ms;
 
-    &:hover {
-        transform: scale(1.01);
-        box-shadow: 0 15px 50px $shadows;
-    }
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 15px 50px $shadows;
+  }
 }
-
-
 
 // responsive
 
 @media (min-width: $desktop) {
-    .box--info {
-        @include flexCenter(row);
-        justify-content: space-around;
-    }
+  .box--info {
+    @include flexCenter(row);
+    justify-content: space-around;
+  }
 
-    .box__contacts__list {
-        line-height: 3rem;
-    }
-    
+  .box__contacts__list {
+    line-height: 3rem;
+  }
 }

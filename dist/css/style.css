@@ -19,7 +19,7 @@ body {
 }
 
 .box__image {
-  margin: .8rem;
+  margin: 0.8rem;
 }
 
 .box__image .box__image__photo {
@@ -84,7 +84,7 @@ main {
 }
 
 .box__ed__list__item {
-  margin-top: .6rem;
+  margin-top: 0.6rem;
 }
 
 .box__about__list {
@@ -92,7 +92,7 @@ main {
 }
 
 .box__about__list__item {
-  margin-top: .6rem;
+  margin-top: 0.6rem;
 }
 
 .box .dates {
@@ -100,22 +100,27 @@ main {
 }
 
 .box .dates::after {
-  content: ':';
+  content: ":";
 }
 
 .box__about__text {
   line-height: 1.7rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .title {
   text-align: center;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 footer {
+  margin-top: 2rem;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0.1rem;
+  background-color: #FEF5ED;
 }
 
 .link {
@@ -125,7 +130,7 @@ footer {
 }
 
 .link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px;
