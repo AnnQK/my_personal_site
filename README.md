@@ -1,6 +1,6 @@
 # My resume / CV for Front-end trainee job. (in progress)
 
-## Tools:
+### Tools:
 ---
 - HTML 
 - CSS, SASS, BEM 
